@@ -54,3 +54,6 @@ test/tracetesting/tracetesting-vars.yaml
 *.apk
 
 !src/currency/build
+
+# databases
+*.db

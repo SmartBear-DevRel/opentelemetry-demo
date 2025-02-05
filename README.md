@@ -74,6 +74,25 @@ your preferred deployment method:
 - [Docker](https://opentelemetry.io/docs/demo/docker_deployment/)
 - [Kubernetes](https://opentelemetry.io/docs/demo/kubernetes_deployment/)
 
+```sh
+# rebuild images with bugsnag branch changes
+docker compose build product-catalog
+docker compose build flagd-ui
+docker compose build frontend-proxy
+docker compose build frontend
+docker compose build payment
+docker compose build load-generator
+docker compose build email
+docker compose build checkout
+make start # start the app 
+make run-tracetesting # start the trace tests
+```
+
+View the BugSnag SmartBear DevRel project here:
+
+- https://app.bugsnag.com/smartbeardevrel/opentelemetry-demo
+
+
 ## Documentation
 
 For detailed documentation, see [Demo Documentation][docs]. If you're curious

@@ -1,7 +1,11 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
 
-FROM node:20 AS builder
+#   Creating an optimized production build ...
+# ⚠ Attempted to load @next/swc-linux-arm64-gnu, but it was not installed
+# ⚠ Attempted to load @next/swc-linux-arm64-musl, but an error occurred: /lib/aarch64-linux-gnu/libc.so: invalid ELF header
+# ⨯ Failed to load SWC binary for linux/arm64, see more info here: https://nextjs.org/docs/messages/failed-loading-swc
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 

@@ -1,8 +1,7 @@
 module github.com/opentelemetry/opentelemetry-demo/src/product-catalog
 
 go 1.22.7
-
-toolchain go1.22.9
+toolchain go1.23.7
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.2
@@ -24,6 +23,7 @@ require (
 	google.golang.org/protobuf v1.36.3
 	gorm.io/driver/sqlite v1.5.7
 	gorm.io/gorm v1.25.12
+	gorm.io/plugin/opentelemetry v0.1.11
 )
 
 require (
@@ -73,17 +73,16 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/exp v0.0.0-20240531132922-fd00a4e0eefc // indirect
 	golang.org/x/mod v0.21.0 // indirect
-	golang.org/x/net v0.33.0 // indirect
-	golang.org/x/sync v0.10.0 // indirect
-	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/net v0.36.0 // indirect
+	golang.org/x/sync v0.11.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.24.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20241209162323-e6fa225c2576 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241209162323-e6fa225c2576 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/plugin/opentelemetry v0.1.11 // indirect
 	k8s.io/apimachinery v0.31.1 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8 // indirect

@@ -1,11 +1,12 @@
 module github.com/open-telemetry/opentelemetry-demo/src/checkout
 
 go 1.22.7
-
-toolchain go1.22.9
+toolchain go1.24.1
 
 require (
 	github.com/IBM/sarama v1.45.0
+	github.com/bugsnag/bugsnag-go-performance v1.0.0
+	github.com/bugsnag/bugsnag-go/v2 v2.5.1
 	github.com/google/uuid v1.6.0
 	github.com/open-feature/go-sdk v1.14.0
 	github.com/open-feature/go-sdk-contrib/hooks/open-telemetry v0.3.4
@@ -16,7 +17,6 @@ require (
 	go.opentelemetry.io/contrib/instrumentation/runtime v0.58.0
 	go.opentelemetry.io/otel v1.33.0
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.33.0
-	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.33.0
 	go.opentelemetry.io/otel/sdk v1.33.0
 	go.opentelemetry.io/otel/sdk/metric v1.33.0
 	go.opentelemetry.io/otel/trace v1.33.0
@@ -32,11 +32,7 @@ require (
 	connectrpc.com/connect v1.17.0 // indirect
 	connectrpc.com/otelconnect v0.7.1 // indirect
 	github.com/barkimedes/go-deepcopy v0.0.0-20220514131651-17c30cfc62df // indirect
-	github.com/bugsnag/bugsnag-go-performance v1.0.0 // indirect
-	github.com/bugsnag/bugsnag-go/v2 v2.5.1 // indirect
-	github.com/bugsnag/panic-monitor v1.1.0 // indirect
 	github.com/bugsnag/panicwrap v1.3.4 // indirect
-	github.com/bugsnag/proc-launcher v1.0.0 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/diegoholiveira/jsonlogic/v3 v3.5.3 // indirect
@@ -80,17 +76,16 @@ require (
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/zeebo/xxh3 v1.0.2 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
-	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.33.0 // indirect
 	go.opentelemetry.io/otel/metric v1.33.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.4.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/crypto v0.32.0 // indirect
+	golang.org/x/crypto v0.35.0 // indirect
 	golang.org/x/exp v0.0.0-20240531132922-fd00a4e0eefc // indirect
 	golang.org/x/mod v0.21.0 // indirect
 	golang.org/x/net v0.34.0 // indirect
-	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20241209162323-e6fa225c2576 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241209162323-e6fa225c2576 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
